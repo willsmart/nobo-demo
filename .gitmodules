@@ -1,0 +1,3 @@
+[submodule "nobo"]
+	path = nobo
+	url = https://willsmart@github.com/willsmart/nobo.git
