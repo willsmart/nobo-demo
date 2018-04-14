@@ -1,0 +1,19 @@
+-# coding: utf-8
+.settings
+  .toggle-group{toggle:'tagpath'}
+    .inline-block.toggle-group.toggle-modal.relative{toggle:'settings'}
+      %a.grey-link.toggle-button{toggle:'settings'}
+        &nbsp;•••&nbsp;
+      .page-settings.toggle-focus.toggle-fader{style:'display:none;', toggle:'settings'}
+        .page-setting.no-modal-dim
+          .title
+            Name
+            %span.help-button.grey-text.toggle-button{toggle:'tagpath'}
+              ?
+          .setting
+            .editTagPath-subtemplate{variant:'textwithform', name_field:'name', title_field:'${name|<enter your name>}', placeholder_field:"Type your name and press enter"}
+        .page-setting.no-modal-dim.help-text.toggle-display{toggle:'tagpath', style:'display:none;'}
+          .full-size.toggle-fader{toggle:'tagpath'}
+            This is just a more verbose way of setting your name in the demo
+            %br
+            You could also tap on your name to change it anywhere it has a squiggly underline.

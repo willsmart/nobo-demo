@@ -1,0 +1,36 @@
+.page.d-flex.flex-column.align-items-center.full-width.full-min-height
+  // ${name}
+  // nav
+  .header-subtemplate{model:'user__me', variant:'nav'}
+
+  // info about the page, breadcrumbs, page model settings
+  .page-name-heading.full-width.relative
+    .full-width.d-flex.justify-content-end
+      &nbsp;
+      .settings-subtemplate{model:'user__me', variant:'settings'}
+    .full-width.d-flex.flex-column.align-items-center
+      .page-type<
+        %h1.text-center
+          The nobo demo is running!
+        %h4.em
+          "The aim: a basic model-driven site with no code"
+
+
+  // tags
+  
+  .page-content-heading.width-6-responsive
+    %br
+    .desciption.text-center
+      This will be a super simple demo of nobo. Clearly nothing here is finished at the mo 😐🛠
+  
+  // users
+  %h3.page-content-heading.width-10-responsive
+    Your glorious users:
+  .width-10.d-flex.justify-content-center.flex-wrap.bottom-margin-1rem
+    .users-model-child{variant:'nameanchorlinkbubble', order_field:'topLevelSortOrdinal'}
+  .d-flex.flex-column.width-10-responsive
+    .page-table.d-flex.justify-content-center.flex-wrap
+      .users-model-child.grow-1.full-width{variant:'tablerow', style:'order: ${topLevelSortOrdinal};'}
+        .model-placeholder
+
+  .footer-subtemplate{model:'user__me', variant:'footer'}

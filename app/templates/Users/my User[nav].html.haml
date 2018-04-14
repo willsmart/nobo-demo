@@ -1,0 +1,16 @@
+%nav.navbar.navbar-default.center.full-width
+  #change-page-loading.toggle-display.toggle-fader.toggle-group.d-flex{toggle:'loading',style:'display:none !important;'}
+    %div
+      Loading...
+  .navbar-header
+    .app-model-child{variant:"brandlink"}
+  %ul.nav.navbar-nav.links-container
+    %li.links-member.content-subtemplate{variant:'pushlink', title_field:'My content'}
+      .subtemplate-placeholder
+    %li.links-member
+      .model-placeholder
+  %ul.nav.navbar-nav.ml-auto.navbar-right.rightLinks-container
+    %li.rightLinks-model-child
+      .model-placeholder.using-parent-model
+    %li.signOut-subtemplate{variant:'messagelink', title_field:'Sign out', message_field:'signOut',modelid_field:"User"}
+      .subtemplate-placeholder
