@@ -1,0 +1,38 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Update schema",
+            "program": "${workspaceRoot}/joined/tools/js/update-db-schema.js",
+            "args": [
+                "--save"
+            ],
+            "cwd": "${workspaceFolder}/joined"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Model server",
+            "program": "${workspaceFolder}/joined/tools/js/model-server.js",
+            "args": [
+                "--prompter"
+            ],
+            "cwd": "${workspaceFolder}/joined"
+        }, 
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Update templates",
+            "program": "${workspaceFolder}/joined/tools/js/update-db-templates.js",
+            "args": [
+            ],
+            "cwd": "${workspaceFolder}/joined"
+        }
+    ]
+}
