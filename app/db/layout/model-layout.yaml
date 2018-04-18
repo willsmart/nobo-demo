@@ -10,3 +10,6 @@
           body(string): null
           ~< replies(Post):
             as: reply_to_post
+
+- User:
+    breadcrumbTitle(string): {get: "'<'+name+'>'"}
