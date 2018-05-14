@@ -11,7 +11,16 @@
             "name": "Update schema",
             "program": "${workspaceRoot}/joined/tools/js/update-db-schema.js",
             "args": [
-                "--save"
+                "dryRun=0"
+            ],
+            "cwd": "${workspaceFolder}/joined"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Seed db",
+            "program": "${workspaceRoot}/joined/tools/js/seed-db.js",
+            "args": [
             ],
             "cwd": "${workspaceFolder}/joined"
         },
@@ -30,6 +39,15 @@
             "request": "launch",
             "name": "Update templates",
             "program": "${workspaceFolder}/joined/tools/js/update-db-templates.js",
+            "args": [
+            ],
+            "cwd": "${workspaceFolder}/joined"
+        }, 
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Test datapoint cache module",
+            "program": "${workspaceFolder}/joined/tools/js/tests/datapoint-cache/test.js",
             "args": [
             ],
             "cwd": "${workspaceFolder}/joined"

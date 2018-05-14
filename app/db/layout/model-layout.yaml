@@ -6,10 +6,11 @@
         bio(string): null
 
         ~< posts(Post):
-          title(string): null
-          body(string): null
-          ~< replies(Post):
-            as: reply_to_post
+            as: user
+            title(string): null
+            body(string): null
+            ~< replies(Post):
+                as: reply_to_post
 
 - User:
     breadcrumbTitle(string): {get: "'<'+name+'>'"}
