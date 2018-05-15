@@ -9,7 +9,7 @@
             "type": "node",
             "request": "launch",
             "name": "Update schema",
-            "program": "${workspaceRoot}/joined/tools/js/update-db-schema.js",
+            "program": "${workspaceRoot}/joined/tools/js/mains/update-db-schema.js",
             "args": [
                 "dryRun=0"
             ],
@@ -19,7 +19,7 @@
             "type": "node",
             "request": "launch",
             "name": "Seed db",
-            "program": "${workspaceRoot}/joined/tools/js/seed-db.js",
+            "program": "${workspaceRoot}/joined/tools/js/mains/seed-db.js",
             "args": [
             ],
             "cwd": "${workspaceFolder}/joined"
@@ -28,7 +28,7 @@
             "type": "node",
             "request": "launch",
             "name": "Model server",
-            "program": "${workspaceFolder}/joined/tools/js/model-server.js",
+            "program": "${workspaceFolder}/joined/tools/js/mains/model-server.js",
             "args": [
                 "--prompter"
             ],
@@ -38,7 +38,7 @@
             "type": "node",
             "request": "launch",
             "name": "Update templates",
-            "program": "${workspaceFolder}/joined/tools/js/update-db-templates.js",
+            "program": "${workspaceFolder}/joined/tools/js/mains/update-db-templates.js",
             "args": [
             ],
             "cwd": "${workspaceFolder}/joined"
