@@ -11,7 +11,8 @@
             "name": "Update schema",
             "program": "${workspaceRoot}/joined/tools/js/mains/update-db-schema.js",
             "args": [
-                "dryRun=0"
+                "dryRun=0",
+                "retrigger=1"
             ],
             "cwd": "${workspaceFolder}/joined"
         },
@@ -37,6 +38,15 @@
         {
             "type": "node",
             "request": "launch",
+            "name": "Model client",
+            "program": "${workspaceFolder}/joined/tools/js/mains/model-client.js",
+            "args": [
+            ],
+            "cwd": "${workspaceFolder}/joined"
+        },
+        {
+            "type": "node",
+            "request": "launch",
             "name": "Update templates",
             "program": "${workspaceFolder}/joined/tools/js/mains/update-db-templates.js",
             "args": [
@@ -51,6 +61,15 @@
             "args": [
             ],
             "cwd": "${workspaceFolder}/joined"
-        }
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Test templates module",
+            "program": "${workspaceFolder}/joined/tools/js/tests/templates/test.js",
+            "args": [
+            ],
+            "cwd": "${workspaceFolder}/joined"
+        },
     ]
 }

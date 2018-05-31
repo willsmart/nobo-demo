@@ -3,6 +3,7 @@
     
     ~< users(User):
         name(string): {default: "Unnamed user"}
+        appName(string): {get: "app.name"}
         bio(string): null
 
         ~< posts(Post):
