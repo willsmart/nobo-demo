@@ -10,22 +10,22 @@
       &nbsp;
     .width-10.d-flex.flex-column.align-items-center
       .page-type
-        Content by
+        Content byy
       %h1.no-top-margin.max-width-12
         %span.name
-          ${name|&lt;unnamed user&gt;}
+          ${name||'unnamed user'}
       %h6.wsprewrap.max-width-12> 
-        ${bio|}
+        ${bio||''}
 
 
   // posts
-  %h3.page-content-heading.width-10-responsive{style:'${posts?|display:none !important;}'}
+  %h3.page-content-heading.width-10-responsive{style:'${posts?"":"display:none !important;"}'}
     Posts
   .width-10.d-flex.justify-content-center.flex-wrap.bottom-margin-1rem
     .posts-model-child{variant:'nameanchorlinkbubble', order_field:'topLevelSortOrdinal'}
-  .d-flex.flex-column.width-10-responsive{style:'${posts?|display:none !important;}'}
+  .d-flex.flex-column.width-10-responsive{style:'${posts?"":"display:none !important;"}'}
     .page-table.d-flex.justify-content-center.flex-wrap
-      .posts-model-child.grow-1.full-width{variant:'card', style:'order: ${topLevelSortOrdinal};'}
+      .posts-model-child.grow-1.full-width{variant:'tablerow', style:'order: ${topLevelSortOrdinal};'}
         .model-placeholder
 
 
