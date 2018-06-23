@@ -1,0 +1,13 @@
+-   App:
+    -   id: 1
+        name: NoBo!
+        users:
+            -   id: name
+                name: Bob
+                posts:
+                    -   id: body
+                        body: Frist post
+                    -   id: body
+                        body: A post
+            -   id: name
+                name: Betty

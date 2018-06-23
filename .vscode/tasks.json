@@ -6,7 +6,7 @@
         {
             "label": "bundle client",
             "type": "shell",
-            "command": "./bundle",
+            "command": "bash bundle",
             "options": {
                 "cwd": "${workspaceFolder}/joined/tools/js/client"
             },
