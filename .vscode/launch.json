@@ -1,75 +1,80 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "Update schema",
-            "program": "${workspaceRoot}/joined/tools/js/mains/update-db-schema.js",
-            "args": [
-                "dryRun=0",
-                "retrigger=1"
-            ],
-            "cwd": "${workspaceFolder}/joined"
-        },
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "Seed db",
-            "program": "${workspaceRoot}/joined/tools/js/mains/seed-db.js",
-            "args": [
-            ],
-            "cwd": "${workspaceFolder}/joined"
-        },
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "Model server",
-            "program": "${workspaceFolder}/joined/tools/js/mains/model-server.js",
-            "args": [
-                "--prompter"
-            ],
-            "cwd": "${workspaceFolder}/joined"
-        }, 
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "Model client",
-            "program": "${workspaceFolder}/joined/tools/js/mains/model-client.js",
-            "args": [
-            ],
-            "cwd": "${workspaceFolder}/joined"
-        },
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "Update templates",
-            "program": "${workspaceFolder}/joined/tools/js/mains/update-db-templates.js",
-            "args": [
-            ],
-            "cwd": "${workspaceFolder}/joined"
-        }, 
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "Test datapoint cache module",
-            "program": "${workspaceFolder}/joined/tools/js/tests/datapoint-cache/test.js",
-            "args": [
-            ],
-            "cwd": "${workspaceFolder}/joined"
-        },
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "Test templates module",
-            "program": "${workspaceFolder}/joined/tools/js/tests/templates/test.js",
-            "args": [
-            ],
-            "cwd": "${workspaceFolder}/joined"
-        },
-    ]
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Update schema",
+      "program": "${workspaceRoot}/joined/tools/js/mains/update-db-schema.js",
+      "args": ["dryRun=0", "retrigger=1"],
+      "cwd": "${workspaceFolder}/joined"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Seed db",
+      "program": "${workspaceRoot}/joined/tools/js/mains/seed-db.js",
+      "args": [],
+      "cwd": "${workspaceFolder}/joined"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Model server",
+      "program": "${workspaceFolder}/joined/tools/js/mains/model-server.js",
+      "args": ["--prompter"],
+      "cwd": "${workspaceFolder}/joined"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Model client",
+      "program": "${workspaceFolder}/joined/tools/js/mains/model-client.js",
+      "args": [],
+      "cwd": "${workspaceFolder}/joined"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Update templates",
+      "program": "${workspaceFolder}/joined/tools/js/mains/update-db-templates.js",
+      "args": [],
+      "cwd": "${workspaceFolder}/joined"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Run all tests",
+      "program": "${workspaceFolder}/joined/tools/js/tests/tests.js",
+      "args": [],
+      "cwd": "${workspaceFolder}/joined"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Test datapoint cache module",
+      "program": "${workspaceFolder}/joined/tools/js/tests/tests.js",
+      "args": ["filter=datapoint-cache"],
+      "cwd": "${workspaceFolder}/joined"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Test DOM generator module",
+      "program": "${workspaceFolder}/joined/tools/js/tests/tests.js",
+      "args": ["filter=dom-generator"],
+      "cwd": "${workspaceFolder}/joined"
+    }
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Test DOM updater module",
+      "program": "${workspaceFolder}/joined/tools/js/tests/tests.js",
+      "args": ["filter=dom-updater"],
+      "cwd": "${workspaceFolder}/joined"
+    }
+  ]
 }

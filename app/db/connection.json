@@ -1,6 +1,6 @@
 {
-    "host": "127.0.0.1",
-    "database": "nobodemo",
-    "username": "nobodemo",
-    "password": "password"
+  "host": "127.0.0.1",
+  "database": "nobodemo",
+  "username": "postgres",
+  "password": "password"
 }
