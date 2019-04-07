@@ -7,6 +7,30 @@
     {
       "type": "node",
       "request": "launch",
+      "name": "Joiner",
+      "program": "${workspaceRoot}/nobo/tools/js/build/joiner.js",
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Demo fs path infos",
+      "program": "${workspaceRoot}/nobo/tools/js/build/joiner/demo-fs-path-infos.js",
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Demo logical joiner",
+      "program": "${workspaceRoot}/nobo/tools/js/build/joiner/demo-logical-joiner.js",
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "node",
+      "request": "launch",
       "name": "Update schema",
       "program": "${workspaceRoot}/joined/tools/js/mains/update-db-schema.js",
       "args": ["dryRun=0", "retrigger=1"],
@@ -67,7 +91,7 @@
       "program": "${workspaceFolder}/joined/tools/js/tests/tests.js",
       "args": ["filter=dom-generator"],
       "cwd": "${workspaceFolder}/joined"
-    }
+    },
     {
       "type": "node",
       "request": "launch",
