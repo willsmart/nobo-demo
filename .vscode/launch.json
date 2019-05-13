@@ -11,7 +11,7 @@
       "program": "${workspaceRoot}/nobo/tools/js/build/joiner.js",
       "args": [],
       "cwd": "${workspaceFolder}"
-    },
+    }, 
     {
       "type": "node",
       "request": "launch",
